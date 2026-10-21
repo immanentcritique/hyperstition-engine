@@ -1,0 +1,16 @@
+{
+  "name": "recursion-kernel",
+  "version": "0.1.0",
+  "description": "A forkable, self-compiling memory for recursion units.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "status": "node kernel.mjs status",
+    "check": "node kernel.mjs check",
+    "build": "node kernel.mjs build",
+    "demo": "node examples/build-demo.mjs",
+    "test": "node test/run.mjs",
+    "release": "node test/run.mjs && node examples/build-demo.mjs && node kernel.mjs check && node kernel.mjs build"
+  }
+}

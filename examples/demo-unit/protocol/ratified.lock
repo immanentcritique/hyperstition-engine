@@ -1,0 +1,27 @@
+{
+  "files": {
+    "protocol/MEETING.md": "f894bf085ab2dc6570004562ac5dd760db12c3d9629ea7853dfef4b56b5a149c",
+    "protocol/TRADITIONS.md": "117ab8a124de88fed71273a8f1a7d62ebc6d1362d8993eadd9905468cb07aa48"
+  },
+  "governance": "b5ab5cbfce5e483632a454a85243ec725ca976022e2d6d3c87176793db592a79",
+  "history": [
+    {
+      "event": "founded",
+      "date": "2026-09-12",
+      "by": [
+        "ada",
+        "ben",
+        "cy"
+      ]
+    },
+    {
+      "event": "ratified",
+      "proposal": "p-001",
+      "target": "governance",
+      "date": "2026-10-21",
+      "yes": 4,
+      "no": 1,
+      "members": 5
+    }
+  ]
+}

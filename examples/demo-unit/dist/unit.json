@@ -1,0 +1,335 @@
+{
+  "unit": {
+    "name": "unit.example",
+    "place": "Anytown",
+    "founded": "2026-09-12",
+    "forked_from": "recursion.kernel",
+    "lineage": [
+      "recursion.kernel"
+    ],
+    "governance": {
+      "quorum": 0.5,
+      "threshold": 0.75
+    }
+  },
+  "members": 5,
+  "pulse": 0.9,
+  "horizons": [
+    {
+      "id": "h-001",
+      "title": "A town where nobody eats alone",
+      "status": "open",
+      "nearness": 0.3291666666666667,
+      "requirements": [
+        "r-001",
+        "r-002"
+      ]
+    },
+    {
+      "id": "h-002",
+      "title": "Our block grows a third of its own food",
+      "status": "open",
+      "nearness": 0.5083333333333333,
+      "requirements": [
+        "r-003",
+        "r-004",
+        "r-005"
+      ]
+    },
+    {
+      "id": "h-003",
+      "title": "A night market every full moon",
+      "status": "composted",
+      "nearness": null,
+      "requirements": []
+    }
+  ],
+  "requirements": [
+    {
+      "id": "r-001",
+      "title": "A weekly shared meal anyone can find",
+      "status": "open",
+      "horizons": [
+        "h-001"
+      ],
+      "current": 0.4833333333333334,
+      "start": 0.15,
+      "movement": 0.33333333333333337,
+      "trail": [
+        {
+          "act": "a-001",
+          "date": "2026-09-19",
+          "before": 0.15,
+          "after": 0.3,
+          "delta": 0.15,
+          "voices": 3
+        },
+        {
+          "act": "a-003",
+          "date": "2026-09-30",
+          "before": 0.32499999999999996,
+          "after": 0.32499999999999996,
+          "delta": 0,
+          "voices": 2
+        },
+        {
+          "act": "a-005",
+          "date": "2026-10-10",
+          "before": 0.28333333333333327,
+          "after": 0.4833333333333334,
+          "delta": 0.20000000000000004,
+          "voices": 3
+        }
+      ]
+    },
+    {
+      "id": "r-002",
+      "title": "Ten households that cook for more than themselves",
+      "status": "open",
+      "horizons": [
+        "h-001"
+      ],
+      "current": 0.175,
+      "start": 0.05,
+      "movement": 0.12499999999999999,
+      "trail": [
+        {
+          "act": "a-001",
+          "date": "2026-09-19",
+          "before": 0.05,
+          "after": 0.1,
+          "delta": 0.05,
+          "voices": 1
+        },
+        {
+          "act": "a-005",
+          "date": "2026-10-10",
+          "before": 0.1,
+          "after": 0.175,
+          "delta": 0.075,
+          "voices": 2
+        }
+      ]
+    },
+    {
+      "id": "r-003",
+      "title": "A map of every unused yard on the block",
+      "status": "open",
+      "horizons": [
+        "h-002"
+      ],
+      "current": 0.6499999999999999,
+      "start": 0.3,
+      "movement": 0.3499999999999999,
+      "trail": [
+        {
+          "act": "a-002",
+          "date": "2026-09-24",
+          "before": 0.3,
+          "after": 0.6499999999999999,
+          "delta": 0.35,
+          "voices": 2
+        }
+      ]
+    },
+    {
+      "id": "r-004",
+      "title": "Three neighbours who can start seeds",
+      "status": "open",
+      "horizons": [
+        "h-002"
+      ],
+      "current": 0.45,
+      "start": 0.2,
+      "movement": 0.25,
+      "trail": [
+        {
+          "act": "a-003",
+          "date": "2026-09-30",
+          "before": 0.2,
+          "after": 0.15,
+          "delta": -0.05000000000000002,
+          "voices": 1
+        },
+        {
+          "act": "a-004",
+          "date": "2026-10-04",
+          "before": 0.15,
+          "after": 0.45,
+          "delta": 0.3,
+          "voices": 3
+        }
+      ]
+    },
+    {
+      "id": "r-005",
+      "title": "A corner shelf people restock",
+      "status": "open",
+      "horizons": [
+        "h-002"
+      ],
+      "current": 0.42500000000000004,
+      "start": 0.225,
+      "movement": 0.20000000000000004,
+      "trail": [
+        {
+          "act": "a-006",
+          "date": "2026-10-17",
+          "before": 0.225,
+          "after": 0.42500000000000004,
+          "delta": 0.2,
+          "voices": 2
+        }
+      ]
+    }
+  ],
+  "acts": [
+    {
+      "id": "a-001",
+      "title": "Cooked for twelve in ada’s yard",
+      "date": "2026-09-19",
+      "score": "s-002",
+      "requirements": [
+        "r-001",
+        "r-002"
+      ],
+      "felt": 1.3333333333333333,
+      "deltas": {
+        "r-001": {
+          "before": 0.15,
+          "after": 0.3,
+          "delta": 0.15,
+          "voices": 3
+        },
+        "r-002": {
+          "before": 0.05,
+          "after": 0.1,
+          "delta": 0.05,
+          "voices": 1
+        }
+      }
+    },
+    {
+      "id": "a-002",
+      "title": "Walked the block and drew the yards",
+      "date": "2026-09-24",
+      "score": "s-001",
+      "requirements": [
+        "r-003"
+      ],
+      "felt": 1.5,
+      "deltas": {
+        "r-003": {
+          "before": 0.3,
+          "after": 0.6499999999999999,
+          "delta": 0.35,
+          "voices": 2
+        }
+      }
+    },
+    {
+      "id": "a-003",
+      "title": "Two-hour planning meeting",
+      "date": "2026-09-30",
+      "score": "",
+      "requirements": [
+        "r-001",
+        "r-004"
+      ],
+      "felt": -1,
+      "deltas": {
+        "r-001": {
+          "before": 0.32499999999999996,
+          "after": 0.32499999999999996,
+          "delta": 0,
+          "voices": 2
+        },
+        "r-004": {
+          "before": 0.2,
+          "after": 0.15,
+          "delta": -0.05000000000000002,
+          "voices": 1
+        }
+      }
+    },
+    {
+      "id": "a-004",
+      "title": "Seed-starting with dee’s grandmother",
+      "date": "2026-10-04",
+      "score": "s-003",
+      "requirements": [
+        "r-004"
+      ],
+      "felt": 1.6666666666666667,
+      "deltas": {
+        "r-004": {
+          "before": 0.15,
+          "after": 0.45,
+          "delta": 0.3,
+          "voices": 3
+        }
+      }
+    },
+    {
+      "id": "a-005",
+      "title": "Second shared meal, at ben’s",
+      "date": "2026-10-10",
+      "score": "s-002",
+      "requirements": [
+        "r-001",
+        "r-002"
+      ],
+      "felt": 1.3333333333333333,
+      "deltas": {
+        "r-001": {
+          "before": 0.28333333333333327,
+          "after": 0.4833333333333334,
+          "delta": 0.20000000000000004,
+          "voices": 3
+        },
+        "r-002": {
+          "before": 0.1,
+          "after": 0.175,
+          "delta": 0.075,
+          "voices": 2
+        }
+      }
+    },
+    {
+      "id": "a-006",
+      "title": "Built the corner shelf",
+      "date": "2026-10-17",
+      "score": "s-001",
+      "requirements": [
+        "r-005"
+      ],
+      "felt": 1,
+      "deltas": {
+        "r-005": {
+          "before": 0.225,
+          "after": 0.42500000000000004,
+          "delta": 0.2,
+          "voices": 2
+        }
+      }
+    }
+  ],
+  "proposals": [
+    {
+      "id": "p-001",
+      "title": "Raise the bar for changing the rules",
+      "target": "governance",
+      "status": "ratified",
+      "yes": 4,
+      "no": 1
+    },
+    {
+      "id": "p-002",
+      "title": "Plan only while making",
+      "target": "protocol/TRADITIONS.md",
+      "status": "open",
+      "yes": 2,
+      "no": 0
+    }
+  ]
+}

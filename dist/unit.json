@@ -1,0 +1,19 @@
+{
+  "unit": {
+    "name": "recursion.kernel",
+    "place": "",
+    "founded": "",
+    "forked_from": "",
+    "lineage": [],
+    "governance": {
+      "quorum": 0.5,
+      "threshold": 0.66
+    }
+  },
+  "members": 0,
+  "pulse": null,
+  "horizons": [],
+  "requirements": [],
+  "acts": [],
+  "proposals": []
+}
